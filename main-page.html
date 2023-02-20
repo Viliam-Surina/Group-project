@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Poppins:wght@400;600;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Web Dev</title>
+</head>
+<body>
+    <div class = "header">
+        <div class = "left-section">
+            <img class = logo-img src = "images/logo.jpg">
+        </div>
+        <div class ="mid-section">
+            <input class = "search-bar"type ="text" placeholder="Search">
+            <button class = "search-button">
+                <img class = "search-image" src="images/search.svg">
+            </button>
+        </div>
+        <div class = "right-section">
+            <div class = "roadmap">
+                <p><a href="#road-map">Roadmap</a></p>
+            </div>
+            <div class="team-nav">
+                <p><a href="#team-section">Team</a></p>
+            </div>
+            <div class = "contact-nav">
+                <p><a href="#contact">Contact</a></p>
+            </div>
+        </div>
+    </div>
+    <div class = "intro-section" id = "intro-section">
+        
+        <h1 class="h1-intro">An introduction to web development</h1> 
+        <h2 class ="h2-intro">
+            <h2>Programmer:</h2>
+                <p><strong>1. an organism that converts caffeine into code, usually late at night.</strong></p>
+                <p><strong>2. a person who solves a problem you did not know you had in a way you dont understand.</strong></p>
+
+            </ul>
+    </div>
+    <div id="intro">
+        <h2>Intro</h2>
+        <h3>What is it about?</h3>
+        <p>A front end developer has one general responsibility: to ensure that website visitors can easily interact with the page. They do this through the combination of design, technology and programming to code a website's appearance, as well as taking care of debugging.</p>
+        <br>
+        <p>Before you will start you should determine the purpose and goals of your website, and create a rough plan or outline of the pages and content you want to include.</p>
+        <br>
+        <p>We have prepared few tutorials which will help you to create your first website.<br>Good luck!</p>
+    </div>
+    <div id = "road-map"><h2>Roadmap</h2>
+        <div class = "roadmap2">
+        <ul> 
+            <li class="image1">
+            <h3>HTML intro</h3>
+            <a href="https://www.youtube.com/watch?v=pQN-pnXPaVg"></a>
+            </li>
+            <p>HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of elements. HTML elements tell the browser how to display the content.</p>
+        </ul> 
+        </div>
+        <div class = "roadmap3">
+        <ul>    
+            <li class="image2">
+            <h3>CSS intro</h3>
+            <a href="https://www.youtube.com/watch?v=OXGznpKZ_sA"></a>
+            </li>
+            <p>CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers.</p>
+        </ul>     
+        </div>
+        <div class = "roadmap4">
+        <ul>     
+            <li class="image3">
+            <h3>JavaSc intro</h3>
+            <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg&list=PLWKjhJtqVAbleDe3_ZA8h3AO2rXar-q2V&index=1"></a>
+            </li>
+            <p>JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else!</p>
+        </ul>
+        </div>
+        <div class = "roadmap5">
+            <ul>     
+                <li class="image4">
+                <h3>React intro</h3>
+                <a href="https://www.youtube.com/watch?v=bMknfKXIFA8"></a>
+                </li>
+            <p>React is a JavaScript library developed by Facebook. Its aim is to allow developers to easily create fast user interfaces for websites and applications alike.</p>
+            </ul>
+            </div>
+    </div>
+    <div id = "team-section"><h2>Team of tutors</h2>
+        <ul>
+            <li class="nathan"><h3>Nathan Salsby</h3></li>
+            <li class="viliam"><h3>Viliam Surina</h3></li>
+
+        </ul>
+    </div>
+    <section id="contact">
+        <h2>Join our team!</h2>
+        <form action="mailto:vsurinaknk@gmail.com" method="POST" enctype="text/plain">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="5" required></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <div class="lockup">
+            <nav>
+                <a href="#road-map"><strong>Road-map</strong></a>
+                <a href="#team-section"><strong>Team</strong></a>
+                <a href="#contact"><strong>Contact</strong></a>
+            </nav>    
+            <p id="copyright">All content copyright 2023</p>
+        
+        </div>
+        
+        </footer>    
+        <script src="app.js"></script>
+</body>
+</html>

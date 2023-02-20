@@ -1,0 +1,498 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  padding-top: 55px;
+  margin:0;
+}
+.header {
+    height: 55px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    background-color: #20c1f1;
+}
+.left-section{
+    width: 100px;
+    background-color: #20c1f1;
+    display:flex; 
+    justify-content: center;   
+}
+.logo-img{
+    height: 50px;
+    display:flex;
+    align-items: center;  
+    margin-top:2px;
+}
+.mid-section{
+    display:flex;
+    align-items: center;   
+    flex:1;
+    margin-left:400px;
+    margin-right: 300px;
+    background-color: #20c1f1;
+}
+.right-section{
+display:flex;
+justify-content: space-between;
+width:300px;
+background-color: #20c1f1;
+margin-right: 50px;
+align-items: center;
+}
+.search-bar{
+    flex:1;
+    height:34px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+}
+.search-bar::placeholder{
+    font-family: Roboto, Georgia;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.search-image{
+    height:20px;
+    margin-top: 4px;
+}
+.search-button{
+    height: 37px;
+    width:40px;
+    
+}
+h1 {
+  font-family: Georgia;
+  margin-top:0;
+  margin-bottom:0;
+  color: black;
+  font-size: 62px;
+  font-weight: 700;
+}   
+
+h2{
+    font-family: Georgia;
+    margin-top:;
+    margin-bottom:0;
+    color: black;
+    font-size: 35px;
+    font-weight: 700;
+    font: bold;
+    text-align: center;
+    
+  }    
+h3{
+      font-family:  Georgia;;
+      margin-top:0;
+      margin-bottom:0;
+      color: black;    
+      text-align: center;
+
+  }
+p {
+  font-family: Georgia;;
+  max-width: 450px;
+    padding: 0 px;
+    font: bold;
+    font-size: 24px;
+    
+    font-weight: 100;
+
+}
+.intro-section{
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+    height:500px;
+    background: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+
+}
+.h1-intro{
+  margin-top:30px;
+}
+.h2-intro{
+  padding-left:100px;
+  padding-right:200px;
+  margin-top:100px;
+  max-width: 550px;
+  padding: 0 15px;
+  margin: 50px auto 50px;
+  font-size: 24px;
+  text-align: left;
+  
+}
+.roadmap-section{
+  display:flex;
+  flex-direction: row;
+    height: 700px;
+    background: linear-gradient(to bottom, #d9bce9ce, #20c1f1);
+}
+#team-section{
+  
+  flex-direction: row;
+    height:800px;
+    background: linear-gradient(to bottom, #d9bce9ce, #20c1f1);
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    float: left;
+    position: relative;
+    
+  }
+  
+  a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+  li:hover > ul {
+    display: block;
+  }
+  
+  ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 0;
+    z-index: 1;
+  }
+  
+  ul ul li {
+    float: none;
+    position: relative;
+  }
+  
+  ul ul a {
+    padding: 12px 16px;
+  }
+  
+  ul ul ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+  }
+  
+  li.active {
+    background-color: #4CAF50;
+  }
+  
+  li.active > a {
+    color: white;
+  }
+  
+  li.active ul {
+    display: block;
+  }
+  
+  li.active ul li.active {
+    background-color: #4CAF50;
+  }
+  
+  li.active ul li.active > a {
+    color: white;
+  }
+  
+a:hover {
+    color: rgba(0,0,0,1);
+}
+    #contact {
+      background: linear-gradient(to top, #d9bce9ce, #20c1f1);
+        padding: 50px 0;
+        max-width: 800px;
+        text-align: center;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        box-sizing: border-box;
+        box-shadow: 0 20px 50px rgb(12, 9, 9);
+        padding: 10px;
+        border-radius: 15px;
+      }
+      
+      #contact h2 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+        margin-bottom: 50px;
+      }
+      
+      #contact form {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+      
+      .form-group label {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+      }
+      
+      .form-group input,
+      .form-group textarea {
+        padding: 10px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+      }
+      
+      .form-group input:focus,
+      .form-group textarea:focus {
+        outline: none;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+      }
+      
+      button[type="submit"] {
+        background-color: #0077B5;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+      }
+      
+      button[type="submit"]:hover {
+        background-color: #005f8d;
+      }
+      footer {
+        background-color: #20c1f1;
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: overlay,normal;
+        height: 180px;
+        padding-bottom: 20px;
+    }
+    #copyright {
+      color:rgb(0, 0, 0);
+      text-align: center;
+      margin-left: 720px;
+    }
+    label{
+      color:white;
+    }
+    #road-map {
+    height: 1600px;
+    background: linear-gradient(to bottom, #ffffffce, #20c1f1);
+    margin-bottom: 50px;
+    }
+    .roadmap2 {
+      display:flex;
+      flex-direction: initial;
+      height: 400px;
+      background: linear-gradient(to bottom, #f3f3f3ce, #20c1f1);
+      }
+    .roadmap3 {
+        display:flex;
+        flex-direction: initial;
+        height: 400px;
+        background: linear-gradient(to top, #d9bce9ce, #20c1f1);
+        }
+    .roadmap4 {
+          display:flex;
+          flex-direction: initial;
+          height: 400px;
+          background: linear-gradient(to bottom, #d9bce9ce, #20c1f1);
+    }
+    .roadmap5 {
+            display:flex;
+            flex-direction: initial;
+            height: 400px;
+            background: linear-gradient(to top, #d9bce9ce, #20c1f1);
+    }      
+    #road-map h2 {
+      text-align: center;
+      margin-top: 130px;
+      font-size: 50px;
+      background: linear-gradient(to bottom, #d9bce9ce, #fcfcfc);
+      padding-top: 80px;
+    }
+    #road-map h3 {
+     
+      margin-top: px;
+      font-size: 25px;
+      margin-top: -50px;
+    }
+    #road-map ul {
+      display: list-item;
+      margin-top: 100px;
+      padding: 0;
+    }
+    
+    #road-map li {
+      width: 300px;
+      height: 200px;
+      margin-bottom: 30px;
+      margin-left: 600px;
+      margin-right: 40px;
+      padding: 20px;
+      background-color: #756e6e;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease-in-out;
+      box-sizing: border-box;
+      border-radius: 15px;
+      border-width: 2px;
+      border-color: #fff;
+    }
+    
+    #road-map li:hover {
+      transform: translateY(-10px);
+    }
+    
+    #road-map li h3 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+    
+    #road-map li p {
+      margin-bottom: 20px;
+    }
+    
+    
+    #road-map li a:hover {
+      background-color: #005f8d;
+    }
+    #intro {
+      height: 400px;
+    background: linear-gradient(to top, #ffffffce, #20c1f1);
+    }
+    #intro h2 {
+      text-align: center;
+     
+      font-size: 44px;
+    }
+    #intro h3 {
+      text-align: center;
+      font-size: 32px;
+margin-top: 5px;
+    }
+    #intro p {
+      text-align: center;
+      font-size: 20px;
+      margin-top: 22px;
+      margin-left: 725px;
+      max-width: 450px;
+      display: flex;
+      }
+      #road-map p {
+        text-align: center;
+        font-size: 22px;
+        margin-top: 22px;
+        margin-left: 725px;
+        max-width: 450px;
+        display: flex;
+        }
+  #team-section h2{
+    margin-top: 100px;
+    padding-top: 150px;
+    text-align: center;
+      font-size: 44px;
+  }
+  #team-section h3{
+    margin-top: 100px;
+    padding-top: 150px;
+    text-align: center;
+      font-size: 34px;
+  }
+  #team-section li{
+    margin-top: 150px;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 30px;
+    margin-left: 350px;
+    margin-right: 200px;
+    padding: 20px;
+    background-color: #756e6e;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border-width: 2px;
+    border-color: #fff;
+  }
+  #team-section li:hover {
+    transform: translateY(-10px);
+  }
+  .viliam {
+  background: url("images/stewie.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.nathan {
+  background: url("images/nathan.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.image1 {
+  background: url("images/html.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.image2 {
+  background: url("images/css.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.image3 {
+  background: url("images/jvsc.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.image4 {
+  background: url("images/react.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
